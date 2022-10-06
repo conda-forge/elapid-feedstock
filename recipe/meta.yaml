@@ -1,13 +1,13 @@
 {% set name = "elapid" %}
-{% set version = "0.3.14" %}
+{% set version = "0.3.15" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: bd1e740b3c7333d9f38720c76ec0fe08bc04156b198337b886e1155902b899c5
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 9498e6f29e3ee3754cdc58422631198ebf6f040631fb785a89e42e184dfbe2f1
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -24,6 +24,7 @@ requirements:
     - geopandas >=0.7.0,<2
     - numpy >=1.18
     - pandas >=1.0.3,<2
+    - pyproj >=3.0,<4
     - rasterio >=1.2.1,<2
     - rtree >=0.9,<2
     - scikit-learn >=0.22.2,<2
