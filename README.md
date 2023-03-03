@@ -1,11 +1,11 @@
-About elapid
-============
+About elapid-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/elapid-feedstock/blob/main/LICENSE.txt)
 
 Home: https://elapid.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/elapid-feedstock/blob/main/LICENSE.txt)
 
 Summary: Species distribution modeling support tools
 
