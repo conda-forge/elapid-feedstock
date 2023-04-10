@@ -1,5 +1,5 @@
 {% set name = "elapid" %}
-{% set version = "0.3.21" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 186ce8dfb1251faf86f30c9dd186221a026a68fe86ae3796534b0b1a62d1243b
+  sha256: 9b34d8afccc1608140da19ea844bd22c25e52b53572a0af5e256323a5307d0dd
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
