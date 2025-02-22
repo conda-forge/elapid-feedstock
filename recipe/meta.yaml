@@ -18,11 +18,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools
   run:
     - python >={{ python_min }}
     - descartes >=1.1.0,<2
     - geopandas >=0.7.0,<2
-    - numpy >=1.18
+    - numpy >=1.18,<2
     - pandas >=1.0.3,<2
     - pyproj >=3.0,<4
     - rasterio >=1.2.1,<2
